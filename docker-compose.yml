@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: retail-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: retail_warehouse_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespassword
+    ports:
+      - "5433:5432"
+    volumes:
+      - retail_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d retail_warehouse_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: retail-backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: postgres
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: retail_warehouse_db
+      DB_USER: postgres
+      DB_PASSWORD: postgrespassword
+    ports:
+      - "8081:8081"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: retail-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "3001:80"
+
+volumes:
+  retail_postgres_data:

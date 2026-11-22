@@ -1,0 +1,16 @@
+*.class
+*.log
+*.jar
+*.war
+target/
+.mvn/
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env.local
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
