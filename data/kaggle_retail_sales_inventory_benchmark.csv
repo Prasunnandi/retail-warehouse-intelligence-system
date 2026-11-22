@@ -1,0 +1,9 @@
+sku,product_name,category,unit_retail_price,unit_cogs,sales_volume_units,total_revenue,gross_profit_usd,gross_margin_pct,stock_dallas_hub,stock_austin_store,stock_houston_wh,reorder_threshold,profit_detective_alert,rebalance_action
+TEC-PH-10001,Apple iPhone 15 Pro Max 256GB,Electronics,1199.99,1140.00,85,101999.15,5099.15,5.00%,12,3,45,20,HIGH_REVENUE_LOW_MARGIN,Transfer 15 units Houston to Austin
+FUR-CH-20002,Herman Miller Aeron Ergonomic Chair,Furniture,1495.00,750.00,42,62790.00,31290.00,49.83%,8,2,18,10,OPTIMAL_HIGH_MARGIN,Restock Reorder Recommended
+OFF-PR-30003,HP LaserJet Enterprise M608dn,Office Supplies,899.99,845.00,60,53999.40,3299.40,6.11%,4,1,28,15,HIGH_REVENUE_LOW_MARGIN,Transfer 10 units Houston to Austin
+TEC-LT-40004,Dell XPS 15 9530 Core i9,Electronics,2299.00,1650.00,28,64372.00,18172.00,28.23%,6,4,14,10,BALANCED_HEALTHY,None
+GRO-OR-50005,Organic Fair-Trade Colombian Coffee Beans,Groceries,24.50,9.20,1250,30625.00,19125.00,62.45%,140,45,450,100,HIGH_PROFIT_FAST_TURNOVER,Restock Reorder Triggered
+FUR-DK-60006,Solid Oak Standing Executive Desk,Furniture,850.00,420.00,35,29750.00,15050.00,50.59%,10,2,22,8,OPTIMAL_HIGH_MARGIN,Transfer 5 units Houston to Austin
+OFF-ST-70007,Heavy-Duty Commercial Storage Shelving,Office Supplies,320.00,180.00,110,35200.00,15400.00,43.75%,25,12,85,30,BALANCED_HEALTHY,None
+TEC-MO-80008,LG UltraWide 38-inch Curved Monitor,Electronics,1299.99,1220.00,32,41599.68,2559.68,6.15%,5,1,16,10,HIGH_REVENUE_LOW_MARGIN,Transfer 6 units Houston to Austin

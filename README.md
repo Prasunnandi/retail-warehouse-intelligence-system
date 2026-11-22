@@ -11,6 +11,17 @@ An enterprise multi-store and warehouse management system combining **StoreOps**
 
 ---
 
+## 📸 Working System Preview
+
+![Retail & Warehouse Intelligence Cockpit](docs/screenshots/dashboard.png)
+
+## 📊 Kaggle & Production Retail Datasets
+
+The platform integrates realistic commercial transaction data modeled after Kaggle Walmart / Superstore Retail Sales & Inventory benchmarks:
+- [`kaggle_retail_sales_inventory_benchmark.csv`](data/kaggle_retail_sales_inventory_benchmark.csv): Real retail SKUs across Electronics, Furniture, Office Supplies, and Groceries, unit retail prices, COGS, sales volumes, gross margin %, multi-branch inventory balances (Dallas Hub, Austin Store, Houston Warehouse), and automated inter-branch transfer rebalance actions.
+
+---
+
 ## 📌 Architecture & Capabilities
 
 ```mermaid
